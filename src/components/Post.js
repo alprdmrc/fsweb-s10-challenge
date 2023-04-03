@@ -22,8 +22,8 @@ export default function Post({ item }) {
         })}
       </h1>
 
-      {item.body.split("|").map((li) => (
-        <p className="mt-2" key={li}>
+      {item.body.split("|").map((li, idx) => (
+        <p className="mt-2" key={idx}>
           - {li}
         </p>
       ))}
